@@ -1,0 +1,60 @@
+/* Header container */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif; /* Matches the playful font */
+    color: #ffffff;
+    background-color: #FEC938; /* Bright, fun colors */
+    padding: 2rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Logo styling */
+  header img {
+    width: 500px;
+    height: auto;
+  }
+  
+  /* Main heading */
+  header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem; /* Larger, playful text */
+    color: #059784; /* Bold, fun red */
+    margin: 0.5rem 0;
+  }
+  
+  /* Subheading/Description */
+  header p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for smaller screens */
+  @media (max-width: 768px) {
+    header {
+      padding: 1.5rem;
+    }
+  
+    header img {
+      width: 60px;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.2rem;
+    }
+  }
+  

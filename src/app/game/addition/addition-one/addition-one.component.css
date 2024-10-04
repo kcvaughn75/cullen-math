@@ -1,0 +1,88 @@
+/* Container for the addition-one game */
+.addition-one-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffecb3; /* Light yellow for a fun background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  /* Heading for the game */
+  h2 {
+    font-size: 3rem;
+    color: #ff4b4b; /* Fun red color */
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Math equation container */
+  .math-equation {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  /* Input field for answer */
+  .answer-input {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    outline: none;
+  }
+  
+  /* Button for submitting answer */
+  .submit-button {
+    margin-left: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Style for responsive design on smaller screens */
+  @media (max-width: 768px) {
+    .addition-one-container {
+      padding: 1rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    .math-equation {
+      font-size: 2rem;
+    }
+  
+    .answer-input {
+      font-size: 1.5rem;
+      width: 80px;
+    }
+  
+    .submit-button {
+      font-size: 1.2rem;
+    }
+  }
+  

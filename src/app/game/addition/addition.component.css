@@ -1,0 +1,60 @@
+/* Container styling for the addition game */
+.addition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #c6ffdd, #fbd786, #f7797d); /* Playful gradient */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  /* Style for text */
+  p {
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', sans-serif;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Buttons for addition operations */
+  .addition-operation-button {
+    background-color: #FF4B4B; /* Fun red color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .addition-operation-button:hover {
+    background-color: #e04141;
+  }
+  
+  .addition-operation-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Style for responsiveness */
+  @media (max-width: 768px) {
+    .addition-container {
+      padding: 1.5rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    .addition-operation-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  

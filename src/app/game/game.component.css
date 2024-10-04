@@ -1,0 +1,55 @@
+/* Style for the container of the game */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffecb3, #fec938);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+
+  div {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center;     /* Centers the button vertically */
+    margin-bottom: 2rem;     /* Adds spacing below the button */
+  }
+  
+  /* Style for buttons inside the game component */
+  .addition-button {
+    background-color: #401ed4; /* Bright green */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  /* Button hover and active states */
+  .addition-button:hover {
+    background-color: #45a049;
+  }
+  
+  .addition-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Style for mobile responsiveness */
+  @media (max-width: 768px) {
+    .game-container {
+      padding: 1.5rem;
+    }
+  
+    .addition-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  

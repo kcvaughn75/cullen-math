@@ -1,0 +1,11 @@
+<button (click)="toggleNav()">Toggle Menu</button>
+
+<nav [class.collapsed]="isCollapsed" class="side-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">+ Addition</a></li>
+    <li><a href="#">- Subtraction</a></li>
+    <li><a href="#">* Multiplication</a></li>
+    <li><a href="#">/ Division</a></li>
+  </ul>
+</nav>

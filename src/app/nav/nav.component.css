@@ -1,0 +1,44 @@
+/* Existing styles */
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #059784;
+  padding-top: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Collapsed state */
+.collapsed {
+  width: 60px; /* Smaller width for collapsed state */
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.collapsed ul li a {
+  padding: 10px; /* Reduced padding in collapsed state */
+}
+
+/* Additional responsive media query if needed */
+@media (max-width: 768px) {
+  .side-nav {
+    width: 200px;
+  }
+
+  .collapsed {
+    width: 50px;
+  }
+}

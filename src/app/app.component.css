@@ -1,0 +1,20 @@
+/* Add this to your global styles, or the app's main container */
+body {
+    background-color: #E0F7FA; /* Light cyan background */
+    font-family: 'Fredoka One', sans-serif; /* Ensures a playful font throughout */
+    color: #333; /* Dark color for text readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure the main content containers adjust to the new background */
+  .container {
+    background-color: #FFECb3; /* Retain yellow background for content areas */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  

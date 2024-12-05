@@ -1,9 +1,19 @@
 <div>
-  <button class="addition-button" >
-    + Addition
+  <button class="gameButton" (click)="onNumberRecognitionButtonClick()">
+    NUMBER RECOGNITION
+  </button>
+  <button class="gameButton" (click)="onAdditionButtonClick()">
+    + ADDITION
+  </button>
+  <button class="gameButton" (click)="onSubtractionButtonClick()">
+    - SUBTRACTION
   </button>
 </div>
 
 @if (isAddition) {
-    <app-addition />
+<app-addition />
+} @else if (isSubtraction) {
+<app-subtraction />
+}@else if (isNumberRecognition) {
+<app-number-recog />
 }

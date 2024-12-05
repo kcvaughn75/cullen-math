@@ -1,60 +1,83 @@
-/* Container styling for the addition game */
 .addition-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: linear-gradient(to bottom right, #c6ffdd, #fbd786, #f7797d); /* Playful gradient */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffd54f, #ffab40);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+  color: #333;
+  font-family: "Fredoka One", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem; /* Larger heading */
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.math-equation p {
+  font-size: 3rem; /* Bigger font for the math problem */
+  font-weight: bold;
+  color: #333;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.choice-button {
+  background-color: #401ed4;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.5rem; /* Slightly larger font for buttons */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.choice-button:hover {
+  background-color: #ff9100;
+  transform: scale(1.05);
+}
+
+.choice-button:active {
+  transform: scale(0.95);
+}
+
+.img-juju {
+  width: 50px;
+  height: auto; 
+}
+
+@media (max-width: 768px) {
+  .addition-container {
+    padding: 1.5rem;
   }
-  
-  /* Style for text */
-  p {
-    font-size: 1.5rem;
-    font-family: 'Fredoka One', sans-serif;
-    color: #333333;
-    margin: 0;
-    text-align: center;
+
+  h2 {
+    font-size: 2rem;
   }
-  
-  /* Buttons for addition operations */
-  .addition-operation-button {
-    background-color: #FF4B4B; /* Fun red color */
-    color: white;
-    padding: 15px 30px;
+
+  .math-equation p {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .choice-button {
     font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
+    padding: 0.5rem 1rem;
   }
-  
-  .addition-operation-button:hover {
-    background-color: #e04141;
-  }
-  
-  .addition-operation-button:active {
-    transform: scale(0.95);
-  }
-  
-  /* Style for responsiveness */
-  @media (max-width: 768px) {
-    .addition-container {
-      padding: 1.5rem;
-    }
-  
-    p {
-      font-size: 1.2rem;
-    }
-  
-    .addition-operation-button {
-      font-size: 1rem;
-      padding: 12px 24px;
-    }
-  }
-  
+}

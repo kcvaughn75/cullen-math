@@ -1,0 +1,77 @@
+.addition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffd54f, #ffab40);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+    color: #333;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  h2 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .math-equation p {
+    font-size: 3rem; /* Bigger font for the math problem */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .choice-button {
+    background-color: #401ed4;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.5rem; /* Slightly larger font for buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .choice-button:hover {
+    background-color: #ff9100;
+    transform: scale(1.05);
+  }
+  
+  .choice-button:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .addition-container {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .math-equation p {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  
+    .choice-button {
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  

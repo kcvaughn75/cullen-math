@@ -1,20 +1,43 @@
-/* Add this to your global styles, or the app's main container */
-body {
-    background-color: #E0F7FA; /* Light cyan background */
-    font-family: 'Fredoka One', sans-serif; /* Ensures a playful font throughout */
-    color: #333; /* Dark color for text readability */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+  height: 100%; /* Ensures the background color covers the entire viewport */
+  margin: 0; /* Removes default margin */
+  font-family: 'Fredoka One', sans-serif;
+  color: #333;
+  background-color: rgb(221, 244, 237); /* Set your desired background color */
+  display: flex; /* Enables flex behavior */
+  flex-direction: column; /* Ensures children stack vertically */
+}
+
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  transition: margin-left 0.3s ease, margin-right 0.3s ease; /* Smooth transition */
+  max-width: 900px; /* Limit the width of the main content */
+  background-color: rgb(221, 244, 237);
+}
+
+.side-nav + main {
+  margin-left: 250px; /* Default width of the nav */
+}
+
+.collapsed + main {
+  margin-left: 60px; /* Adjust when the nav is collapsed */
+}
+
+@media (max-width: 768px) {
+  .side-nav + main {
+    margin-left: 60px; /* Default for collapsed nav on small screens */
   }
-  
-  /* Ensure the main content containers adjust to the new background */
-  .container {
-    background-color: #FFECb3; /* Retain yellow background for content areas */
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 2rem auto;
-    max-width: 1200px;
+
+  .collapsed + main {
+    margin-left: 60px;
   }
-  
+
+  main {
+    max-width: 100%; /* Use the full width of the screen */
+    padding: 0.5rem;
+  }
+}
+

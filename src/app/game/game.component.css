@@ -21,7 +21,7 @@
   }
   
   /* Style for buttons inside the game component */
-  .addition-button {
+  .gameButton {
     background-color: #401ed4; /* Bright green */
     color: white;
     padding: 15px 30px;
@@ -30,6 +30,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.2s;
+    margin-right: 1rem;
   }
   
   /* Button hover and active states */

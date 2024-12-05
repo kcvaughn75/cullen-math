@@ -1,6 +1,7 @@
-<button (click)="toggleNav()">Toggle Menu</button>
-
 <nav [class.collapsed]="isCollapsed" class="side-nav">
+  <button (click)="toggleNav()" class="toggle-btn">
+    {{ isCollapsed ? "➡" : "⬅" }}
+  </button>
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">+ Addition</a></li>

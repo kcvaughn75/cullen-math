@@ -3,24 +3,31 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 0p;
   gap: 1rem;
-  width: 90%;
+  width: 75%;
   max-width: 50rem;
-  margin: 0 auto 2rem auto;
+  margin: 2rem auto 2rem auto;
   text-align: center;
   font-family: "Fredoka One", sans-serif; /* Matches the playful font */
   color: #ffffff;
   background-color: #fec938; /* Bright, fun colors */
   padding: 2rem;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Logo styling */
 header img {
-  width: 500px;
+  width: 600px;
   height: auto;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
 }
 
 /* Main heading */
@@ -51,6 +58,20 @@ nav a.active-link {
   border-bottom: 2px solid #ff9100;
 }
 
+header.smaller {
+  height: 100px; /* Smaller size */
+  padding: 1rem;
+  background-color: #fec938; /* Optional: Change background */
+}
+
+img.smaller {
+  height: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
 /* Style for smaller screens */
 @media (max-width: 768px) {
   header {
@@ -58,11 +79,11 @@ nav a.active-link {
   }
 
   header img {
-    width: 60px;
+    width: 500px;
   }
 
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   header p {

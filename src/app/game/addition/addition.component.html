@@ -1,31 +1,17 @@
-<div class="addition-container">
-    <h2>Let's Add!</h2>
-
-    @if (showJuju) {
-      <app-image class="img-juju"/>
-    }
-    
-    @if (currentProblem) {
-      <div class="math-equation">
-        <p>
-          {{ currentProblem.number1 }} + {{ currentProblem.number2 }} = ?
-        </p>
-        <div class="choices">
-          @for (choice of currentProblem.choices; track choice) {
-            <button
-              (click)="checkAnswer(choice)"
-              class="choice-button"
-            >
-              {{ choice }}
-            </button>
-          }
-        </div>
-      </div>
-    } @else {
-      <div>
-        <p>No more problems! Great job!</p>
-      </div>
-    }
-    
+<div class="container">
+  @if (showJuju) {
+  <app-image class="img-juju" />
+  } @if (currentProblem && showJuju === false) {
+  <h2>Let's Add!</h2>
+  <div class="math-equation">
+    <p>{{ currentProblem.number1 }} + {{ currentProblem.number2 }} = ?</p>
+    <div class="choices">
+      @for (choice of currentProblem.choices; track choice) {
+      <button (click)="checkAnswer(choice)" class="choice-button">
+        {{ choice }}
+      </button>
+      }
+    </div>
   </div>
-  
+  }
+</div>

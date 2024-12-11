@@ -1,17 +1,22 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { GameComponent } from '../game/game.component';
+import { Component } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [GameComponent],
+  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  @Output() additionGame = new EventEmitter<void>();
+  isGameSelected: boolean = true;
 
-  onAdditionButtonClick() {
-    this.additionGame.emit();
+  constructor(private sharedService: SharedService) {}
+
+  ngOnInit() {
+    // Subscribe to the service to receive updates
+    this.sharedService.headerState$.subscribe((state: boolean) => {
+      this.isGameSelected = state;
+    });
   }
 }
